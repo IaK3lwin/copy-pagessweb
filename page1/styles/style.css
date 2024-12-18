@@ -1,0 +1,80 @@
+@charset "en";
+
+:root
+{
+    /* cores do site */
+    --color-bg: #0E0E0E;
+    --color-main: #D7C5AC;
+    /* fontes: */
+    /* padrão */
+    --font-standard: Arial, Helvetica, sans-serif;
+}
+
+/* Resetando as estilizações */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* estilização do body e html */
+html, css
+{
+    /* atribuindo familia de fonte padrão ao site */
+    font-family: var(--font-standard);
+
+    /* atribuindo cor de fundo */
+    background-color: var(--color-bg);
+
+    /* atribuindo cor no texto */
+    color: var(--color-main);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*estilização do conteúdo principal*/
+main {
+    /* ocupar a largura e altura do site por completo */
+    width: 99.7vw;
+    height: 99vh;
+}
+
+
+/* estilização generica */
+
+/*dos links: */
+a {
+    /* estili\zandop texto*/
+    text-decoration: none;
+    
+}
+
+/* estilizando a caixa de contatos */
+#contato
+{
+    /*largura minimaa*/
+    min-width: 300px;
+    /*largura maxima*/
+    max-width: 400px;
+    /* altura miniuma */
+    height: 40px;
+    /* centraliza horizontalmente a sessão de contatos margim */
+    margin: auto;
+    
+    /* confugurando fundo  */
+    
+    /* cor de fundio */
+    background: #dfd8d82c;
+    /* ver atravez das coisas com blur */
+    backdrop-filter: blur(12px);
+
+    /*bordas*/
+    /* arredondando a bordA */
+    border-radius: 3px;
+
+    /* ESTILIZANDO AS ÂNCVOREAS DERNTRO DE CONTATOS */
+    a {
+
+    }
+}
