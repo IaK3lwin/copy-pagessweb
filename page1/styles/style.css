@@ -47,21 +47,29 @@ main {
 a {
     /* estili\zandop texto*/
     text-decoration: none;
-    
+    /* cor dos textos */
+    color: var(--color-main);
 }
 
 /* estilizando a caixa de contatos */
 #contato
 {
     /*largura minimaa*/
-    min-width: 300px;
+    min-width: 250px;
     /*largura maxima*/
-    max-width: 400px;
+    max-width: 500px;
     /* altura miniuma */
-    height: 40px;
+    height: 25px;
+    /* configuraando propriedades da box */
     /* centraliza horizontalmente a sessão de contatos margim */
-    margin: auto;
+    margin: 10px auto 10px auto;
+    /* espaço interno na sessão de contatos*/
+    padding: 20px;
     
+    /* configurando o texto */
+    /* centralizando os textos */
+    text-align: center;
+
     /* confugurando fundo  */
     
     /* cor de fundio */
@@ -75,6 +83,18 @@ a {
 
     /* ESTILIZANDO AS ÂNCVOREAS DERNTRO DE CONTATOS */
     a {
+        /* configuraando propriedades da box */
+        
+        padding: 15px 40px 15px 40px;
+        margin: 5px;
+        
+    }
 
+    a:hover {
+        background-color: var(--color-main);
+        color: var(--color-bg);
+        border-radius: 3px;
+        transition: all .3s;
+        
     }
 }
