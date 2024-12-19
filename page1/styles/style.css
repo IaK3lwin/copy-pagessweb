@@ -133,20 +133,53 @@ a {
 
 /* estilização botão mais */
 
+/* conteudo escondido */
 span#show {
+    /* torna invisivel */
     display: none;
-    transition: all .5s;
+    /* tentativa de transição suave */
+    transition: display .5s;
 }
 
+/* configurações do bootão de mostrar mais */
 #btn-show-more
 {
+    /* tamanho */
     width: 50px;
     height: 50px;
+    /* configuraçlão da box do botão */
     display: block;
     margin: auto;
 }
 
+/* cursor muda ao passar no botão */
 #btn-show-more:hover
 {
     cursor: pointer;
 }
+
+/* estilização do icons-redes */
+
+#icons-redes
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* das imagens dentro  */
+#icons-redes img
+{
+    
+    /* tamanho */
+    width: 30px;
+    height: 30px;
+
+    /* configuraçlão da box */
+    display: inline;
+    margin: auto;
+
+    padding: 60px 40px 40px 20px;
+}
+
