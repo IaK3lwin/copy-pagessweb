@@ -5,6 +5,7 @@
     /* cores do site */
     --color-bg: #0E0E0E;
     --color-main: #D7C5AC;
+    --color-main-tras: #d7c5ac09;
     /* fontes: */
     /* padrão */
     --font-standard: Arial, Helvetica, sans-serif;
@@ -33,6 +34,10 @@ html, css
     display: none;
 }
 
+
+
+/* estilização generica */
+
 /*estilização do conteúdo principal*/
 main {
     /* ocupar a largura e altura do site por completo */
@@ -41,7 +46,14 @@ main {
 }
 
 
-/* estilização generica */
+/* estilizaão de titulos */
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 5em;
+}
 
 /*dos links: */
 a {
@@ -49,6 +61,16 @@ a {
     text-decoration: none;
     /* cor dos textos */
     color: var(--color-main);
+}
+
+/* estilizando div da uimagem */
+#bg-face
+{
+    /* fundo da div */
+    background: no-repeat top center url("../img/backgrund1.png");
+
+    width: 99.5vw;
+    height: 500px;
 }
 
 /* estilizando a caixa de contatos */
@@ -73,9 +95,9 @@ a {
     /* confugurando fundo  */
     
     /* cor de fundio */
-    background: #dfd8d82c;
+    background: var(--color-main-tras);
     /* ver atravez das coisas com blur */
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(4px);
 
     /*bordas*/
     /* arredondando a bordA */
