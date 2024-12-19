@@ -8,8 +8,10 @@ function btn_show_more()
 {
     if (btn_more.getAttribute("src") == icon_baixo)
     {
+        document.getElementById("show").style.transition = "display .5s"
         btn_more.setAttribute("src", icon_cima)
         document.getElementById("show").style.display = "block"
+
 
     }
     else 

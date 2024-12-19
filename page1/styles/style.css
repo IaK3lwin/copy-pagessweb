@@ -135,6 +135,7 @@ a {
 
 span#show {
     display: none;
+    transition: all .5s;
 }
 
 #btn-show-more
