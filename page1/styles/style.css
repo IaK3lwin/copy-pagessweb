@@ -10,22 +10,6 @@
     src: url(../fonts/STREETI_.ttf);
 }
 
-@media (min-width: 600px) {
-    section#container-work {
-        display: flex;
-        justify-content: center;
-        margin-top: 60px;
-    
-        flex-direction: column;
-        flex-wrap: nowrap;
-        
-        column-gap: 10px;
-        row-gap: 10px;
-    
-        column-gap: 15px;
-        row-gap: 30px;
-    }
-}
 
 :root
 {
