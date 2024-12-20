@@ -10,6 +10,13 @@
     src: url(../fonts/STREETI_.ttf);
 }
 
+@media screen and (max-widht: 600px) {
+    #container-work {
+        flex-direction: column;
+        display: block;
+    }
+}
+
 :root
 {
     /* cores do site */
@@ -327,17 +334,3 @@ margin-top: 60px;
     background-color: #0E0E0E;
 }
 
-@media screen and (min-width: 900px) {
-    .work-card-more
-    {
-    /* tamanho */
-    width: 100px;
-    height: 40px;
-    margin-bottom: 20px;
-    background-color: #0E0E0E;
-    }
-
-    .work-card {
-        flex-direction: column;
-    }
-}
