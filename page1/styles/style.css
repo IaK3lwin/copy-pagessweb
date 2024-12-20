@@ -10,10 +10,20 @@
     src: url(../fonts/STREETI_.ttf);
 }
 
-@media screen and (max-widht: 600px) {
-    #container-work {
+@media (min-width: 600px) {
+    section#container-work {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    
         flex-direction: column;
-        display: block;
+        flex-wrap: nowrap;
+        
+        column-gap: 10px;
+        row-gap: 10px;
+    
+        column-gap: 15px;
+        row-gap: 30px;
     }
 }
 
@@ -295,11 +305,10 @@ span#show {
     /* box */
     display: flex;
     justify-content: center;
-margin-top: 60px;
+    margin-top: 60px;
 
     flex-direction: row;
     flex-wrap: wrap;
-    columns: 2;
     
     column-gap: 10px;
     row-gap: 10px;
