@@ -5,6 +5,10 @@
     font-family: 'Title';
     src: url(../fonts/Adamant_BG.otf);
 }
+@font-face {
+    font-family: 'Title2';
+    src: url(../fonts/STREETI_.ttf);
+}
 
 :root
 {
@@ -12,8 +16,9 @@
     --color-bg: #0E0E0E;
     --color-main: #D7C5AC;
     --color-main-tras: #e0c7a30e;
-    --color-aside: #181715;
+    --color-aside: #5f5d5a;
     --color-text-card: #413C39;
+    --color-bg-card: #181715;
     --color-strong-card: #504842;
     /* fontes: */
     /* padrão */
@@ -27,7 +32,7 @@
 }
 
 /* estilização do body e html */
-html, css
+html, body
 {
     /* atribuindo familia de fonte padrão ao site */
     font-family: var(--font-standard);
@@ -52,6 +57,8 @@ main {
     /* ocupar a largura e altura do site por completo */
     width: 99.7vw;
     height: 99vh;
+
+    color: var(--color-main);
 }
 
 
@@ -74,7 +81,7 @@ h1 {
 {
     text-align: center;
     margin: auto;
-    color: var(--color-aside);
+    color: #504842;
     width: 300px;
 }
 
@@ -226,7 +233,7 @@ span#show {
     padding: 40px;
 
     /* fundo */
-    background-color: var(--color-aside);
+    background-color: var(--color-bg-card);
 
     /* estilização de paragrafo do card */
     p {
@@ -253,7 +260,69 @@ span#show {
             color: var(--color-text-card);
             vertical-align: middle;
         }
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
     }
+}
+
+/* estilizando sessão de work */
+
+#work {
+    margin-top: 40px;
+
+    h2 {
+        font-family: Title2;
+        font-size: 2.3em;
+        font-weight: lighter;
+        margin-left: 270px;
+        margin-bottom: 10px;
+        color: var(--color-main);
+    }
+}
+
+#container-work
+{
+    /* box */
+    display: flex;
+    justify-content: center;
+margin-top: 60px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    columns: 2;
     
-    
+    column-gap: 10px;
+    row-gap: 10px;
+
+    column-gap: 15px;
+    row-gap: 30px;
+    /* tamanho */
+    width: 1000px;
+    margin: auto;
+}
+
+.work-card
+{
+    /* box */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* tamanho */
+    width: 400px;
+    height: 350px;
+    padding: 10px;
+    /* fundo */
+    background-color: #5f5d5a;
+}
+
+.work-card-more
+{
+    /* tamanho */
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #0E0E0E;
 }
