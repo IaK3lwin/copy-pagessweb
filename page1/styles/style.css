@@ -1,12 +1,20 @@
 @charset "en";
 
+/* fonte interna */
+@font-face {
+    font-family: 'Title';
+    src: url(../fonts/Adamant_BG.otf);
+}
+
 :root
 {
     /* cores do site */
     --color-bg: #0E0E0E;
     --color-main: #D7C5AC;
-    --color-main-tras: #d7c5ac09;
-    --color-aside: #3f3d3a;
+    --color-main-tras: #e0c7a30e;
+    --color-aside: #181715;
+    --color-text-card: #413C39;
+    --color-strong-card: #504842;
     /* fontes: */
     /* padrão */
     --font-standard: Arial, Helvetica, sans-serif;
@@ -51,9 +59,14 @@ main {
 
 h1 {
     display: block;
-    text-align: center;
     margin: auto;
+    /* configurando texto */
+    font-family: Title;
+    font-weight: normal;
+    text-align: center;
     font-size: 5em;
+
+
 }
 
 /* estilização do subtitulo */
@@ -94,7 +107,7 @@ a {
     height: 25px;
     /* configuraando propriedades da box */
     /* centraliza horizontalmente a sessão de contatos margim */
-    margin: 10px auto 10px auto;
+    margin: 30px auto 10px auto;
     /* espaço interno na sessão de contatos*/
     padding: 20px;
     
@@ -162,9 +175,12 @@ span#show {
 
 #icons-redes
 {
+    /* tamanho */
+    width: 99.5vw;
+    /* cnfigurando posiçao dos compoeews */
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-grow: 1;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -180,6 +196,64 @@ span#show {
     display: inline;
     margin: auto;
 
-    padding: 60px 40px 40px 20px;
+    margin: 60px 40px 40px 20px;
+    
 }
 
+/* pseuuuuuuuuuuuuuuuuuud classe mouse por ia da uimagem */
+#icons-redes img:hover
+{
+    /* efeito de luz ao redor do botão */
+    filter: drop-shadow(0 0 .5rem #e0c7a38a);
+}
+
+/* estilizando os cards */
+#container-cards
+{
+    margin-top: 20px;
+    /* configuranbdo box */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cards {
+    /* tamanho */
+    width: clamp(200px, 250px, 300px);
+    height: clamp(100px, 150, 300);
+    /* configurando o box */
+    margin: 30px;
+    padding: 40px;
+
+    /* fundo */
+    background-color: var(--color-aside);
+
+    /* estilização de paragrafo do card */
+    p {
+        /* texto */
+        font-size: small;
+        color: var(--color-text-card);
+
+        /* box */
+        padding: 3px;
+    }
+    /* estilizando titulo do card */
+    h2 {
+        font-family: Title;
+        color: var(--color-text-card);
+    }
+
+    #card-more {
+        display: flex;
+        justify-items: center;
+        margin-top: 10px;
+        color: var(--color-title-card);
+        
+        a {
+            color: var(--color-text-card);
+            vertical-align: middle;
+        }
+    }
+    
+    
+}
