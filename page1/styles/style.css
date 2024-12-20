@@ -336,4 +336,8 @@ margin-top: 60px;
     margin-bottom: 20px;
     background-color: #0E0E0E;
     }
+
+    .work-card {
+        flex-direction: column;
+    }
 }
