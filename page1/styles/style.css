@@ -326,3 +326,14 @@ margin-top: 60px;
     margin-bottom: 20px;
     background-color: #0E0E0E;
 }
+
+@media screen and (min-width: 900px) {
+    .work-card-more
+    {
+    /* tamanho */
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #0E0E0E;
+    }
+}
